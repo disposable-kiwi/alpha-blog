@@ -1,0 +1,22 @@
+<h1>List of All Articles</h1>
+
+<table>
+    <thead>
+    <!--reads content into a table row one by one, left to right-->
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @all_articles.each do |article| %>
+            <tr>
+                <td><%= article.title %></td>
+                <td><%= article.description %></td>
+                <td>Action Placeholder</td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
